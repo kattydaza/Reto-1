@@ -25,9 +25,17 @@
 
         </section>
 
-
         <!--Carrito-->
+        <section class="cart-list">
+            <h2>Tu carrito (0)</h2>
+            <div class="cart-list__items">
+                <div class="items__img">
+                    <img src="images/coffee.png" alt="Comida">
+                </div>
+                <p>Tus compras aparecerán aquí</p>
 
+            </div>
+        </section>
 
         <!--Modal-->
 
@@ -39,178 +47,5 @@
         
 </body>
 </html>
- <!--
-    <header class="header">
-       
-            <a href="#" class="logo">logo</a>
-            <input type="checkbox" id="menu"/>
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="menu">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#"> Inicio </a></li>
-                    <li><a href="#"> Servicios </a></li>
-                    <li><a href="#"> Productos </a></li>
-                    <li><a href="#"> Contacto </a></li>
-                </ul>
-            </nav>
-
-            <div>          
-                <ul>
-                    <li class="submenu">
-                        <img src="images/car.svg" id="img-carrito" alt="carrito de compra">
-                        <div id="carrito">
-                            <table id="lista-carrito">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                            <a href="#" id="vaciar-carrito" class="btn-2"> Vaciar Carrito</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="header-content container">
-            <div class="header-img">
-                <img src="images/logo.png" alt="">
-            </div>
-            <div class="header-txt">
-                <h1>Ofertas Especiales</h1>
-                <p>Aprovecha las inigualables promos</p>
-                <a href="#" class="btn/1">Informacion</a>
-            </div>
-        </div>
-
-    </header>
-
-    <main class="products container" id="lista-1">
-
-        <h2>Productos</h2>
-
-        <div class="product-content">
-
-            <div class="product">
-                <img src="images/empanadaCarne.jpg" alt="Empanada de carne">
-                <div class="product-txt">
-                    <h3>Empanada de carne</h3>
-                    <p class="precio">$ 1.500</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <img src="images/empanadaPollo.jpg" alt="Empanada de pollo">
-                <div class="product-txt">
-                    <h3>Empanada de Pollo</h3>
-                    <p class="precio">$ 1.500</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/papaRellena.jpg" alt="Papa Rellena">
-                <div class="product-txt">
-                    <h3>Papa rellena</h3>
-                    <p class="precio">$ 2.500</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/hamburguesaSencilla.jpg" alt="Hamburguesa sencilla">
-                <div class="product-txt">
-                    <h3>Hamburguesa sencilla</h3>
-                    <p class="precio">$ 15.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/hamburguesaDoble.jpg" alt="Hamburguesa doble">
-                <div class="product-txt">
-                    <h3>Hamburguesa doble</h3>
-                    <p class="precio">$ 22.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/hamburguesaPollo.jpg" alt="Hamburguesa pollo">
-                <div class="product-txt">
-                    <h3>Hamburguesa pollo</h3>
-                    <p class="precio">$ 15.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/pizzaHawaiana.jpg" alt="Pizza Hawaiana">
-                <div class="product-txt">
-                    <h3>Pizza hawaiana</h3>
-                    <p class="precio">$ 35.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/PizzaJamonYQueso.jpg" alt="Pizza jamon y queso">
-                <div class="product-txt">
-                    <h3>Pizza jamon y queso</h3>
-                    <p class="precio">$ 35.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/salchipapaSencilla.jpg" alt="Salchipapa sencilla">
-                <div class="product-txt">
-                    <h3>Salchipapa personal</h3>
-                    <p class="precio">$ 20.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/papasFritasPorcion.jpg" alt="Porcion papas a la francesa">
-                <div class="product-txt">
-                    <h3>Porcion de papas a la francesa</h3>
-                    <p class="precio">$ 6.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/cocaCola.jpg" alt="Gaseosa personal cocacola">
-                <div class="product-txt">
-                    <h3>Gaseosa cocacola pet 400</h3>
-                    <p class="precio">$ 4.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="11">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="images/gaseosaPostobon.jpg" alt="Gaseosa personal postobon">
-                <div class="product-txt">
-                    <h3>Gaseosa postobon pet 400</h3>
-                    <p class="precio">$ 3.000</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="12">Agregar al carrito</a>
-                </div>
-            </div>
-
-        </div>
-
-    </main>
-
--->
-
+ 
 
