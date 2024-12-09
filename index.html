@@ -8,57 +8,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenidos a Sabor Express</h1>
+    <header class="header">
+        <div class="menu container">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#"> Inicio </a></li>
+                    <li><a href="#"> Servicios </a></li>
+                    <li><a href="#"> Productos </a></li>
+                    <li><a href="#"> Contacto </a></li>
+                </ul>
 
-        <div class=" container-icon">
-            <svg
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke-width="1.5" 
-                stroke="currentColor" 
-                class="icon-car"
-            >
+            </nav>
 
-                <path 
-                stroke-linecap="round" 
-                stroke-linejoin="round" 
-                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" 
-                />
-            </svg>
-        
-        <div class="count-products">
-            <span id="contador-productos">0</span>
-        </div>
+            <div>
 
-        <div class="container-cart-products hidden-cart">
-            <div class="cart-product">
-                    <div class="info-cart-product">
-                        <span class="cantidad-producto-carrito">1</span>
-                        <p class="titulo-producto-carrito">Empanada de pollo</p>
-                        <span class="precio-producto-carrito">$2.000</span>
-                    </div>
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="icon-close"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                    />
-                </svg>
-        </div>
-            <div class="cart-total">
-                <h3>Total:</h3>
-                <span class="total-pagar">$2.000</span>
+            <h1>Bienvenidos a </h1>
+            
+                <ul>
+                    <li class="submenu">
+                        <img src="shopping-cart-free-png.webp" id="img-carrito" alt="carito de compra">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2"> Vaciar Carrito</a>
+
+                        </div>
+
+                    </li>
+                </ul>
             </div>
         </div>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="Orange and Black Grunge Illustration Burger Logo.png" alt="">
+            </div>
+            </div>
         </div>
 
     </header>
@@ -66,17 +65,17 @@
             <div class="item">
                 <figure>
                     <img 
-                    src="em carne.jpg" alt="producto 1">
+                    src="emcarne.jpg" alt="producto 1">
                 </figure>
                 <div class="info-product">
                     <h2>Empanada de carne</h2>
                     <p class="Precio"> $2.000 </p>
-                    <button> Añadir al carrito</button>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1"> Agregar al carrito</a>
                     
                 </div>
             </div>
         </div>
-
+        <div class="container-items">
             <div class="item">
                 <figure>
                     <img 
@@ -85,37 +84,40 @@
                 <div class="info-product">
                     <h2>Empanada de pollo</h2>
                     <p class="Precio"> $2.000 </p>
-                    <button> Añadir al carrito</button>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2"> Agregar al carrito</a>
             
                 </div>
             </div>
-
+        </div>
+        <div class="container-items">
             <div class="item">
                 <figure>
                     <img 
-                    src="ham sens.avif" alt="producto 3">
+                    src="hamsens.avif" alt="producto 3">
                 </figure>
                 <div class="info-product">
                     <h2>Hamburgesa sencilla</h2>
                     <p class="Precio"> $8.000 </p>
-                    <button> Añadir al carrito</button>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3"> Agregar al carrito</a>
                 
                 </div>
             </div>
-
+        </div>
+        <div class="container-items">
             <div class="item">
                 <figure>
                     <img 
-                    src="ham doble.jpeg" alt="producto 4">
+                    src="hamdoble.jpeg" alt="producto 4">
                 </figure>
                 <div class="info-product">
                     <h2>Hamburgesa doble</h2>
                     <p class="Precio"> $15.000 </p>
-                    <button> Añadir al carrito</button>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4"> Agregar al carrito</a>
                 
                 </div>
             </div>
-
+        </div>
+        <div class="container-items">
             <div class="item">
                 <figure>
                     <img src="pizza.jpg" alt="producto 5">
@@ -123,23 +125,56 @@
                 <div class="info-product">
                     <h2>Pizza personal</h2>
                     <p class="Precio"> $10.000 </p>
-                    <button> Añadir al carrito</button>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5"> Agregar al carrito</a>
                 </div>
             </div>
-            
-
+        </div>
+        <div class="container-items">
             <div class="item"></div>
             <figure>
                 <img 
                 src="salchi.jpg" alt="producto 6">
             </figure>
-            <div class="info-product">
-                <h2>Salchipapa personal</h2>
-                <p class="Precio"> $15.000 </p>
-                <button> Añadir al carrito</button>
-                
+                <div class="info-product">
+                    <h2>Salchipapa personal</h2>
+                    <p class="Precio"> $15.000 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6"> Agregar al carrito</a>
+                    
+                </div>
             </div>
+        </div>
+        <div class="container-items">
+            <div class="item"></div>
+            <figure>
+                <img 
+                src="papasnf.jpg" alt="producto 7">
+            </figure>
+                <div class="info-product">
+                    <h2>Porcion de papas fritas</h2>
+                    <p class="Precio"> $5.000 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7"> Agregar al carrito</a>
+                    
+                </div>
             </div>
-</body>
+        </div>
+        <div class="container-items">
+            <div class="item"></div>
+            <figure>
+                <img 
+                src="gaseosa.jpg" alt="producto 8">
+            </figure>
+                <div class="info-product">
+                    <h2>Gaseosa personal</h2>
+                    <p class="Precio"> $4.000 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8"> Agregar al carrito</a>
+                    
+                </div>
+            </div>
+        </div>
 
+
+		</div>
+
+        <script src="index.js"></script>
+</body>
 </html>
