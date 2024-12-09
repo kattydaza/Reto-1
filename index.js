@@ -58,7 +58,7 @@ function displayProductos(productos){
 
 /* Funcion para cerrar el modal del pedido y resetear el estado del carrito */
 
-loadProducts ();
+loadProducts();
 
 
 /* 
