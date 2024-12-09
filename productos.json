@@ -4,7 +4,7 @@
         "nombre": "Hamburguesa Sencilla",
         "precio": 15000,
         "categoria" : "Hamburguesa",
-        "imagen": "images/1.jpg"
+        "imagen": "images/hamburguesa.jpg"
     },
     {
         "id": 2,
