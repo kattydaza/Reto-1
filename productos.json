@@ -32,7 +32,7 @@
         "nombre": "Pizza Napolitana",
         "precio": 30000,
         "categoria" : "Pizza",
-        "imagen": "images/hamburguesaSencilla.jpg"
+        "imagen": "images/pizzaNapolitana.jpg"
     },
     {
         "id": 6,
