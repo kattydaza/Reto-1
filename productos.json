@@ -8,24 +8,24 @@
     },
     {
         "id": 2,
-        "nombre": "Hamburguesa Doble",
+        "nombre": "Hamburguesa Especial",
         "precio": 22000,
         "categoria" : "Hamburguesa",
-        "imagen": "images/hamburguesaSencilla.jpg"
+        "imagen": "images/hamburguesaEspecial.jpg"
     },
     {
         "id": 3,
         "nombre": "Hamburguesa de Pollo",
         "precio": 15000,
         "categoria" : "Hamburguesa",
-        "imagen": "images/hamburguesaSencilla.jpg"
+        "imagen": "images/hamburguesaPollo.jpg"
     },
     {
         "id": 4,
         "nombre": "Pizza Jamon Y Queso",
         "precio": 35000,
         "categoria" : "Pizza",
-        "imagen": "images/hamburguesaSencilla.jpg"
+        "imagen": "images/pizzaJamon.jpg"
     },
     {
         "id": 5,
@@ -39,27 +39,27 @@
         "nombre": "Pizza Hawaiana",
         "precio": 33000,
         "categoria" : "Pizza",
-        "imagen": "images/hamburguesaSencilla.jpg"
+        "imagen": "images/pizzaHawaiana.jpg"
     },
     {
         "id": 7,
         "nombre": "Botella De Agua",
         "precio": 2000,
         "categoria" : "Bebidas",
-        "imagen": "images/hamburguesaSencilla.jpg"
+        "imagen": "images/agua.jpg"
     },
     {
         "id": 8,
         "nombre": "Coca cola",
         "precio": 4000,
         "categoria" : "Bebidas",
-        "imagen": "images/hamburguesaSencilla.jpg"
+        "imagen": "images/cocacola.jpg"
     },
     {
         "id": 9,
         "nombre": "Jugo Natural",
         "precio": 8000,
         "categoria" : "Bebidas",
-        "imagen": "images/9.jpg"
+        "imagen": "images/jugo.jpg"
     }
 ]
