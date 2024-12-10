@@ -9,11 +9,12 @@ async function loadProducts () {
         const productos = await response.json();
         displayProductos(productos);
     }catch (error) {
-        console.error('Error al cargar los productos', error);
+        console.error('Error al cargar los productos:', error);
     }
 }
+
 /* Funcion para mostrar los productos de DOM */
-function displayProductos(productos){
+function displayProductos(productos) {
     const productList = document.querySelector('.cards');
     productos.forEach(product => {
         const article = document.createElement('article');

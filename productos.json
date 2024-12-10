@@ -9,7 +9,7 @@
     {
         "id": 2,
         "nombre": "Hamburguesa Especial",
-        "precio": 22000,
+        "precio": 30000,
         "categoria" : "Hamburguesa",
         "imagen": "images/hamburguesaEspecial.jpg"
     },
