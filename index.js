@@ -79,7 +79,6 @@ function addToCart(productId, buttonElement){
 }
 
 
-
 /* Funcion para incrementar la cantidad de un producto*/
 
 function incrementarProducto(productId){
@@ -88,7 +87,7 @@ function incrementarProducto(productId){
     cantidad++;
     cantidadElemento.textContent = cantidad;
 
-    const product = cart.find(item => item.id === productId);
+    const producto = cart.find(item => item.id === productId);
     if(producto) {
         producto.quantity = cantidad;
     }
@@ -108,29 +107,31 @@ function decrementarProducto(productId) {
     }else{
         cantidad = 0;
 
-        cart = cart.filter(item => item.id !==productId);
+        cart = cart.filter(item => item.id !== productId);
 
         const cantidadContainer = cantidadElemento.parentElement;
         const buttonElement = cantidadContainer.previousElementSibling;
         cantidadContainer.style.display = 'none';
         buttonElement.style.display = 'inline-block';
 
-        const cardImgElement = buttonElement.closest('.cards__card').querySelector('.card))img');
+        const cardImgElement = buttonElement.closest('.cards__card').querySelector('.card__img');
         cardImgElement.classList.remove('active');
     }
 
-    const producto = cart.find(item => itemm.id === productId);
+    const producto = cart.find(item => item.id === productId);
     if (producto) {
         producto.quantity = cantidad;
     }
+
     displayCart();
 }
+
 /* Funcion para eliminar un producto de un carrito */
 function removefromCart(productId){
     cart = cart.filter(item => item.id !== productId);
 
-    const cantidadcontainer = document.getElementById(`cantidad-${productId}`).parentElement;
-    const buttonElement = cantidadcontainer.previousElementSibling;
+    const cantidadContainer = document.getElementById(`cantidad-${productId}`).parentElement;
+    const buttonElement = cantidadContainer.previousElementSibling;
     cantidadContainer.style.display = 'none';
     buttonElement.style.display = 'inline-block';
 
@@ -153,36 +154,36 @@ function displayCart() {
 
     if (cart.length === 0) {
         cartList.innerHTML = `
-        <div class="items__img">
-            <img> src="images/logo.png" alt="Comida">
-        </div>
-        <p>Tus compras aparecerán aquí</p>
+            <div class="items__img">
+                <img src="images/logo.png" alt="Comida">
+            </div>
+            <p>Tus compras aparecerán aquí</p>
         `;
     }else {
         cart.forEach(item => {
             total += item.precio * item.quantity;
-            cartList.innerHTML +=`
-            <div class="items__item">
-                <h4>${item.nombre}</h4>
-                <div class ="item__detalles">
-                    <p>${itrm.quantity}x <span>$${item.precio.toFixed(2)}</span></p>
-                    <p>$$${(item.precio.toFixed(2) * item.quantity).toFixed(2)}</p>
-                    <button onclick="removeFromCart(${item.id})">
-                        <i class="ri-close-circle-fill"></i>
-                    </button>
+            cartList.innerHTML += `
+                <div class="items__item">
+                    <h4>${item.nombre}</h4>
+                    <div class ="item__detalles">
+                        <p>${item.quantity}x <span>$${item.precio.toFixed(2)}</span></p>
+                        <p>$$${(item.precio.toFixed(2) * item.quantity).toFixed(2)}</p>
+                        <button onclick="removeFromCart(${item.id})">
+                            <i class="ri-close-circle-line"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
             `;
         });
 
         const totalContainer = document.createElement('div');
         totalContainer.classList.add('item__total');
         totalContainer.innerHTML = `
-        <div>
-            <span>Total a cancelar: </span>
-            <span class="total__monto"> $${total.toFixed(2)}</span>
-        </div>
-        <button class="btn" id="btn-checkout">realizar el pedido</button>
+            <div>
+                <span>Total a cancelar: </span>
+                <span class="total__monto"> $${total.toFixed(2)}</span>
+            </div>
+            <button class="btn" id="btn-checkout">Realizar Pedido</button>
         `;
         cartList.appendChild(totalContainer);
     }
