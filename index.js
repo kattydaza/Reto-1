@@ -167,7 +167,7 @@ function displayCart() {
                     <h4>${item.nombre}</h4>
                     <div class ="item__detalles">
                         <p>${item.quantity}x <span>$${item.precio.toFixed(2)}</span></p>
-                        <p>$$${(item.precio.toFixed(2) * item.quantity).toFixed(2)}</p>
+                        <p>$${(item.precio.toFixed(2) * item.quantity).toFixed(2)}</p>
                         <button onclick="removeFromCart(${item.id})">
                             <i class="ri-close-circle-line"></i>
                         </button>
@@ -190,7 +190,7 @@ function displayCart() {
 
     const checkoutButton = document.getElementById('btn-checkout');
     if (checkoutButton) {
-        //checkoutButton.addEventListener('click', mostrarModalPedido);
+        checkoutButton.addEventListener('click', mostrarModalPedido);
     }
 
     const totalItems = cart.reduce((acc,item) => acc + item.quantity, 0);
