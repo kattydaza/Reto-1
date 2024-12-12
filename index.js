@@ -127,7 +127,7 @@ function decrementarProducto(productId) {
 }
 
 /* Funcion para eliminar un producto de un carrito */
-function removefromCart(productId){
+function removeFromCart(productId){
     cart = cart.filter(item => item.id !== productId);
 
     const cantidadContainer = document.getElementById(`cantidad-${productId}`).parentElement;
@@ -190,7 +190,7 @@ function displayCart() {
 
     const checkoutButton = document.getElementById('btn-checkout');
     if (checkoutButton) {
-        checkoutButton.addEventListener('click', mostrarModalPedido);
+        //checkoutButton.addEventListener('click', mostrarModalPedido);
     }
 
     const totalItems = cart.reduce((acc,item) => acc + item.quantity, 0);

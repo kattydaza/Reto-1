@@ -160,6 +160,7 @@ main{
     border-radius: 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--light-brown);
     border: 2px solid var(--light-brown);
     font-size: 1.1em;
@@ -215,7 +216,7 @@ main{
 .items__img {
     position: relative;
     width: 200px;
-    height: 150px;
+    height: 150px; 
 }
 
 .items__item {
